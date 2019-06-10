@@ -1,4 +1,4 @@
-class CreateIdioms < ActiveRecord::Migration[5.2]
+class CreateIdioms < ActiveRecord::Migration[5.0]
   def change
     create_table :idioms do |t|
       t.string :expression
