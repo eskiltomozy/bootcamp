@@ -1,5 +1,5 @@
 class IdiomsController < ApplicationController
   def index
-    @idiom = Idiom.first
+    @idiom = Idiom.order("RANDOM()").first
   end
 end
