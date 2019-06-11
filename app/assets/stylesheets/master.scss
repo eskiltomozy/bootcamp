@@ -1,5 +1,138 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
 
+html, body {
+  background: url("sergio-souza-1386770-unsplash.jpg") center no-repeat fixed;
+  background-size: cover;
+}
 .clear {
   clear: both;
+}
+.slogan {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: auto;
+  height: 50px;
+  margin: 10px 50px 10px 50px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+.interact {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+  width: auto;
+  height: 50px;
+  margin: 10px 50px 10px 50px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+.interact a {
+  color: black;
+  text-decoration: none;
+}
+.interact a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.wrapper {
+  box-sizing: initial;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.col {
+  background-color: transparent;
+}
+.col-12 {
+  padding: 0px;
+}
+.content_border {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+  display: block;
+  margin: 50px;
+  padding: 50px;
+  border: solid 10px white;
+}
+.bg_link {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40%;
+  z-index: 1;
+}
+.unsplash {
+  float: right;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  padding: 4px 6px;
+  font-family:-apple-system, BlinkMacSystemFont, San Francisco&quot, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 0px;
+}
+.idiom {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 40vh 6vw 0 6vw;
+  z-index: 1;
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  font-family: Raleway, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.logo {
+  background: url("idiomism.svg") right no-repeat;
+  background-size: 30%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 0 5% 6% 0;
+  z-index: 1;
+}
+
+@media (max-width: 750px) {
+  .idiom {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .slogan, .interact {
+    font-size: 10px;
+    height: 30px;
+  }
+  .slogan {
+    margin: 30px 50px 10px 50px;
+  }
+  .interact {
+    margin: 10px 50px 30px 50px;
+  }
 }
