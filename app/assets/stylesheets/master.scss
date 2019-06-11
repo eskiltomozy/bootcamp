@@ -20,7 +20,7 @@ html, body {
   height: 50px;
   margin: 10px 50px 10px 50px;
   padding: 10px;
-  color: black;
+  color: grey;
   background-color: white;
 }
 .interact {
@@ -35,16 +35,17 @@ html, body {
   height: 50px;
   margin: 10px 50px 10px 50px;
   padding: 10px;
-  color: black;
+  color: grey;
   background-color: white;
 }
 .interact a {
-  color: black;
+  color: grey;
   text-decoration: none;
 }
 .interact a:hover {
-  color: black;
-  text-decoration: underline;
+  color: grey;
+  font-weight: 700;
+  text-decoration: none;
 }
 .wrapper {
   box-sizing: initial;
@@ -58,7 +59,7 @@ html, body {
 .col {
   background-color: transparent;
 }
-.col-12 {
+.col-6, .col-12 {
   padding: 0px;
 }
 .content_border {
@@ -81,12 +82,12 @@ html, body {
   top: 0px;
   right: 0px;
   height: 40%;
-  z-index: 1;
+  z-index: 5;
 }
 .unsplash {
   float: right;
   background-color: white;
-  color: black;
+  color: grey;
   text-decoration: none;
   margin: 10px;
   padding: 4px 6px;
@@ -110,14 +111,62 @@ html, body {
   font-weight: 500;
   line-height: 60px;
 }
+.next_idiom {
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  font-family: Raleway, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 0 0 1% 1%;
+  z-index: 1;
+}
+.next_idiom:hover {
+  font-weight: 700;
+}
 .logo {
   background: url("idiomism.svg") right no-repeat;
-  background-size: 30%;
+  background-size: 40%;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  padding: 0 5% 6% 0;
+  padding: 0 0 5% 0;
   z-index: 1;
+}
+.new_input {
+  border: 0px;
+  border-radius: 0px;
+}
+.btn-sm {
+  float: right;
+  border: 0px;
+  border-radius: 0px;
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: transparent;
+}
+.btn-sm:hover {
+  color: white;
+  font-weight: 700;
+  background-color: transparent;
+}
+.footer-blurb, .footer-blurb a {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  z-index: 10;
+  white-space: nowrap;
 }
 
 @media (max-width: 750px) {
@@ -134,5 +183,8 @@ html, body {
   }
   .interact {
     margin: 10px 50px 30px 50px;
+  }
+  .footer-blurb, .footer-blurb a {
+    font-size: 8px;
   }
 }

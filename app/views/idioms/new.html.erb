@@ -1,0 +1,6 @@
+How do you idiomize?
+<%= simple_form_for @idiom, defaults: { input_html: { class: 'new_input' }} do |f| %>
+<%= f.input :expression, label: false, input_html: { value: 'enter your expression' } %>
+<%= f.input :meaning, label: false, input_html: { value: 'and it\'s meaning' } %>
+<%= f.submit 'add it', class: 'btn btn-secondary btn-sm' %>
+<% end %>
