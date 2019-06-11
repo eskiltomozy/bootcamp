@@ -6,7 +6,7 @@ class IdiomsController < ApplicationController
   def new
     @idiom = Idiom.new
   end
-  
+
   def create
     Idiom.create(idiom_params)
     redirect_to root_path
