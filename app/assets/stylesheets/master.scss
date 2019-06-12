@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
 
 html, body {
-  background: url("sergio-souza-1386770-unsplash.jpg") center no-repeat fixed;
+  background: url(asset_path('sergio-souza-1386770-unsplash.jpg')) center no-repeat fixed;
   background-size: cover;
 }
 p {
@@ -164,7 +164,7 @@ h2 {
   font-weight: 700;
 }
 .logo {
-  background: url("idiomism.svg") right no-repeat;
+  background: url(asset_path('idiomism.svg')) right no-repeat;
   background-size: 40%;
   position: absolute;
   right: 0px;
@@ -181,7 +181,7 @@ h2 {
   font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 40px;
   background-color: transparent;
 }
 .btn-sm:hover {
