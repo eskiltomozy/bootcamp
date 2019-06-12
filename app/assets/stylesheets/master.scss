@@ -9,12 +9,17 @@ p {
   color: black;
   font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 25px;
   text-shadow: none;
 }
 p a {
+  color: rgb(200,0,0);
+  text-decoration: none;
+}
+p a:hover {
   color: black;
   font-weight: 700;
+  text-decoration: none;
 }
 h2 {
   color: black;
@@ -86,10 +91,9 @@ h2 {
   padding: 0px;
 }
 .modal-content {
-  color: white;
-  background-color: rgb(200, 0, 0);
+  width: auto;
   padding: 20px;
-  line-height: 10px;
+  white-space: nowrap;
 }
 .content{
   height: 100%;
@@ -110,7 +114,7 @@ h2 {
   margin: 50px;
   border: solid 10px white;
 }
-.bg_link {
+.bg {
   position: absolute;
   top: 60px;
   right: 60px;
@@ -123,7 +127,7 @@ h2 {
   text-decoration: none;
   margin: 10px;
   padding: 4px 6px;
-  font-family:-apple-system, BlinkMacSystemFont, San Francisco&quot, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-family:-apple-system, MacSystemFont, San Francisco&quot, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.2;
@@ -169,10 +173,6 @@ h2 {
   padding: 0 0 5% 0;
   z-index: 1;
 }
-.new_input {
-  border: 0px;
-  border-radius: 0px;
-}
 .btn-sm {
   float: right;
   border: 0px;
@@ -190,23 +190,41 @@ h2 {
   font-weight: 700;
   background-color: transparent;
 }
-.footer-blurb, .footer-blurb a {
+.footer-blurb a {
   position: absolute;
-  left: 50px;
-  bottom: 10px;
-  color: black;
-  font-size: 16px;
+  left: 0px;
+  bottom: 0px;
+  margin: 0px 0px 15px 50px;
+  padding: 0px;
+  width: auto;
+  color: rgb(200,0,0);
+  font-size: 20px;
   font-weight: 700;
-  line-height: 16px;
-  z-index: 10;
+  line-height: 20px;
   white-space: nowrap;
+  text-decoration: none;
+  z-index: 10;
+}
+.footer-blurb a:hover {
+  color: black;
+  text-decoration: none;
 }
 .alert {
-  color: #990000;
+  color: white;
   border: 0px;
-  background-color: transparent;
+  background-color: rgb(200,0,0);
+  height: auto;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-shadow: none;
 }
-
+a {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
 @media (max-width: 750px) {
   .idiom {
     font-size: 30px;
@@ -222,7 +240,9 @@ h2 {
   .interact {
     margin: 10px 50px 30px 50px;
   }
-  .footer-blurb, .footer-blurb a {
-    font-size: 8px;
+}
+@media (min-width: 576px) {
+  .modal-sm {
+      max-width: 350px;
   }
 }

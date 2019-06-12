@@ -10,9 +10,12 @@ class IdiomsController < ApplicationController
   def create
     @idiom = Idiom.create(idiom_params)
     if @idiom.invalid?
-      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+      flash[:error] = '<strong>Say wuh!</strong> Input needed is between 10 to 100 characters, please try again.'
+      redirect_to new_idiom_path
+    else
+      redirect_to root_path
     end
-    redirect_to new_idiom_path 
+     
   end
 
   def learn

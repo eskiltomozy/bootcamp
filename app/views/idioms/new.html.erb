@@ -1,19 +1,13 @@
-<div class="container">
-  <% if flash[:error].present? %>
-    <div class="col-10 offset-1 alert alert-danger">
-      <%= flash[:error].html_safe %>
-    </div>
-  <% end %>
-  <%= yield %>
-</div>
-
 <div class="idiom col-12">
     How do you idiomize?
     <%= simple_form_for @idiom do |f| %>
       <%= f.input :expression, required: true, label: false, placeholder: 'enter your expression' %>
       <%= f.input :meaning, required: true, label: false, placeholder: 'and it\'s meaning' %>
-      <%= f.submit 'add it', class: 'btn-sm' %>
+      <% if flash[:error].present? %>
+      <div class="col-12 alert alert-danger">
+        <%= flash[:error].html_safe %>
+      </div>
     <% end %>
+      <%= f.submit 'add it', class: 'btn-sm' %>
+    <% end %> 
 </div>
-
-<%= link_to 'Launch demo modal', '#', data: {toggle: 'modal', target: '.bd-example-modal-sm'} %>

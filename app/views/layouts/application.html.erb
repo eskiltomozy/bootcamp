@@ -11,17 +11,22 @@
   <body>
 
 <!-- Modal -->
-<%= link_to new_idiom_path do %>
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <strong>Say wuh!</strong>
-      <br/>
-      Data invalid, please try again.
+      <p>
+        Designed and hacked by:
+        <br/>
+        <a href="#">Eskil Tomozy</a>
+      </p>
+      <p>
+        Want to build your own web app?
+        <br/>
+        <a href="https://online.bootcampspot.com">Learn how to code here</a>
+      </p>
     </div>
   </div>
 </div>
-<% end %>
 <!-- header -->
 
     <header>
@@ -70,8 +75,7 @@
         <%= link_to 'add an IDIOM', new_idiom_path %> | <%= link_to 'LEARN about this site', learn_path %></div>
     </footer>
 
-    <div class="col-6 footer-blurb">
-      designed + hacked by <a href="#">eskil tomozy</a><br/>want to build your own web app? <a href="https://online.bootcampspot.com">learn how to code here</a>
+    <div class="footer-blurb"><%= link_to 'LEARN TO CODE', '#', data: {toggle: 'modal', target: '.bd-example-modal-sm'} %>
     </div>
 
   </body>
