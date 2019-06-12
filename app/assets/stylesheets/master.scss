@@ -5,6 +5,29 @@ html, body {
   background: url("sergio-souza-1386770-unsplash.jpg") center no-repeat fixed;
   background-size: cover;
 }
+p {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-shadow: none;
+}
+p a {
+  color: black;
+  font-weight: 700;
+}
+h2 {
+  color: black;
+  text-shadow: none;
+}
+.profile {
+    width: 200px;
+    border: solid 2px black;
+}
+.learn {
+  float: left;
+  margin: 0px 0px 20px 0px;
+}
 .clear {
   clear: both;
 }
@@ -62,6 +85,17 @@ html, body {
 .col-6, .col-12 {
   padding: 0px;
 }
+.modal-content {
+  color: white;
+  background-color: rgb(200, 0, 0);
+  padding: 20px;
+  line-height: 10px;
+}
+.content{
+  height: 100%;
+  padding: 10% 20px 20px 20px;
+  background-color: rgba(255, 255, 255, .5);
+}
 .content_border {
   box-sizing: border-box;
   position: absolute;
@@ -74,14 +108,12 @@ html, body {
   height: inherit;
   display: block;
   margin: 50px;
-  padding: 50px;
   border: solid 10px white;
 }
 .bg_link {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 40%;
+  top: 60px;
+  right: 60px;
   z-index: 5;
 }
 .unsplash {
@@ -102,7 +134,8 @@ html, body {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding: 40vh 6vw 0 6vw;
+  margin-top: 25%;
+  padding: 20px;
   z-index: 1;
   color: white;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
@@ -167,6 +200,11 @@ html, body {
   line-height: 16px;
   z-index: 10;
   white-space: nowrap;
+}
+.alert {
+  color: #990000;
+  border: 0px;
+  background-color: transparent;
 }
 
 @media (max-width: 750px) {

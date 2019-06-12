@@ -8,8 +8,14 @@ class IdiomsController < ApplicationController
   end
 
   def create
-    Idiom.create(idiom_params)
-    redirect_to root_path
+    @idiom = Idiom.create(idiom_params)
+    if @idiom.invalid?
+      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+    end
+    redirect_to new_idiom_path 
+  end
+
+  def learn
   end
 
   private
@@ -17,4 +23,5 @@ class IdiomsController < ApplicationController
   def idiom_params
     params.require(:idiom).permit(:expression, :meaning)
   end
+
 end
